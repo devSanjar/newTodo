@@ -87,19 +87,21 @@ const Todo = () => {
               {todos.map((item, index) => (
                 <li key={index} className="list-group-item d-flex align-items-center shadow-sm py-4 border border-warning border-3 my-1">
                   <div className="btn-group pt-1" role="group">
+
                     <button
                       type="button"
                       className="btn btn-outline-success mx-1 "
                       onClick={() => setEditing(item)}
-                    > EDIT </button>
+                    >
+                      <i className="fas fa-edit" />
+                    </button>
 
                     <button
                       onClick={() => deleteHandler(index + 1)}
-                      className="trash-btn btn btn-danger" style={{ color: '#fff' }}>
-                      DELETE
+                      className="trash-btn btn btn-danger float-end" style={{ color: '#fff', right: '0' }}>
+                      <i className="fas fa-trash-alt" />
                     </button>
-
-                    <span className="badge bg-warning mx-3 px-3">{index + 1}</span> {item}
+                    <h6 className='my-3 ms-3'>{item}</h6>
                   </div>
 
                 </li>
