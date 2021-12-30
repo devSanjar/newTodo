@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.input-group-text {
+  background-color: #fff;
+}
+.form-control {
+  font-size: 1.5rem;
+}
+#csbtn {
+  margin-left: 24rem;
+}
+@media (max-width: 770px) {
+  #csbtn {
+    margin-left: 13rem;
+  }
+}
+@media (max-width: 550px) {
+  #csbtn {
+    margin-left: 11rem;
+  }
+}
+@media (max-width: 500px) {
+  #csbtn {
+    margin-left: 2rem;
+  }
+}
